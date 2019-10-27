@@ -1,0 +1,61 @@
+noexport:
+  donotsend:
+  - what: route
+    peers: ""
+    community: 0
+  - what: route
+    peers: 'peer '
+    community: 52300
+  - what: route
+    peers: ""
+    community: 52200
+  - what: route
+    peers: 'peer link Asia Pac '
+    community: 52500
+  - what: route
+    peers: 'peer link Europe '
+    community: 52600
+  setlocpref: []
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  prepend:
+  - what: 'North American peer '
+    times: 1
+    community: 52401
+  - what: 'North American peer '
+    times: 2
+    community: 52402
+  - what: 'North American peer '
+    times: 3
+    community: 52403
+  - what: 'transit '
+    times: 1
+    community: 52201
+  - what: 'transit '
+    times: 2
+    community: 52202
+  - what: 'transit '
+    times: 3
+    community: 52203
+  - what: 'peer - link Asia - Pac '
+    times: 1
+    community: 52501
+  - what: 'peer - link Asia - Pac '
+    times: 2
+    community: 52502
+  - what: 'peer - link Asia - Pac '
+    times: 3
+    community: 52503
+  - what: 'peer - link Europe '
+    times: 1
+    community: 52601
+  - what: 'peer - link Europe '
+    times: 2
+    community: 52602
+  - what: 'peer - link Europe '
+    times: 3
+    community: 52603
+as: 11164

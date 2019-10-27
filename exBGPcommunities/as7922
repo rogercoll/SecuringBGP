@@ -1,0 +1,19 @@
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  prepend:
+  - what: 'ALL peer '
+    times: 1
+    community: 65101
+  - what: 'ALL peer '
+    times: 2
+    community: 65102
+  - what: 'ALL peer '
+    times: 3
+    community: 65103
+  - what: 'ALL peer '
+    times: 4
+    community: 65104
+as: 7922

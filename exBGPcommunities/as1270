@@ -1,0 +1,7 @@
+localpreference:
+  setcustomerroute:
+  - value: 80
+    community: 80
+  - value: 120
+    community: 120
+as: 1270

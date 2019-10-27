@@ -1,0 +1,43 @@
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  prepend:
+  - what: 'Coagent '
+    times: 1
+    community: 60041
+  - what: 'Coagent '
+    times: 2
+    community: 60042
+  - what: 'Coagent '
+    times: 3
+    community: 60043
+  - what: 'ATT '
+    times: 1
+    community: 60131
+  - what: 'ATT '
+    times: 2
+    community: 60132
+  - what: 'ATT '
+    times: 3
+    community: 60133
+  - what: 'Qwest '
+    times: 1
+    community: 60061
+  - what: 'Qwest '
+    times: 2
+    community: 60062
+  - what: 'Qwest '
+    times: 3
+    community: 60063
+  - what: 'Verizon '
+    times: 1
+    community: 60091
+  - what: 'Verizon '
+    times: 2
+    community: 60092
+  - what: 'Verizon '
+    times: 3
+    community: 60093
+as: 3491

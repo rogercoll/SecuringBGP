@@ -1,0 +1,64 @@
+localpreference:
+  setcustomerroute:
+  - value: 0
+    community: 0
+  - value: 50
+    community: 10001
+  - value: 150
+    community: 10002
+  - value: 200
+    community: 10003
+  - value: 250
+    community: 10004
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: ""
+    asn: 0
+    community: 10010
+  - peer: 'AS5602 '
+    asn: 0
+    community: 10020
+  - peer: 'AS49605 '
+    asn: 0
+    community: 10070
+  prepend:
+  - what: ""
+    times: 1
+    community: 10011
+  - what: ""
+    times: 2
+    community: 2
+  - what: ""
+    times: 3
+    community: 3
+  - what: ""
+    times: 4
+    community: 4
+  - what: 'AS5602 '
+    times: 1
+    community: 10021
+  - what: 'AS5602 '
+    times: 2
+    community: 10022
+  - what: 'AS5602 '
+    times: 3
+    community: 10023
+  - what: 'AS5602 '
+    times: 4
+    community: 10024
+  - what: 'AS49605 '
+    times: 1
+    community: 10071
+  - what: 'AS49605 '
+    times: 2
+    community: 10072
+  - what: 'AS49605 '
+    times: 3
+    community: 10073
+  - what: 'AS49605 '
+    times: 4
+    community: 10074
+as: 9026

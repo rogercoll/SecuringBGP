@@ -1,0 +1,118 @@
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: 'BCIX '
+    asn: 0
+    community: 1000
+  - peer: 'FFM / DeCIX '
+    asn: 0
+    community: 2000
+  - peer: 'DUS / ECIX '
+    asn: 0
+    community: 3000
+  - peer: 'BLN / ECIX '
+    asn: 0
+    community: 3050
+  - peer: 'HBG / ECIX '
+    asn: 0
+    community: 3100
+  - peer: 'KLEYREX '
+    asn: 0
+    community: 4000
+  - peer: 'QSC '
+    asn: 0
+    community: 4100
+  - peer: 'DECIX '
+    asn: 0
+    community: 4200
+  - peer: 'AMSIX '
+    asn: 0
+    community: 4300
+  - peer: 'LINX '
+    asn: 0
+    community: 4400
+  - peer: 'PL '
+    asn: 0
+    community: 9010
+  - peer: 'LA '
+    asn: 0
+    community: 9011
+  - peer: 'ME '
+    asn: 0
+    community: 9012
+  - peer: 'CO '
+    asn: 0
+    community: 9013
+  - peer: 'KP '
+    asn: 0
+    community: 9014
+  - peer: 'L3 '
+    asn: 0
+    community: 9015
+  - peer: 'SY '
+    asn: 0
+    community: 9016
+  prepend:
+  - what: 'BCIX '
+    times: 1
+    community: 1001
+  - what: 'BCIX '
+    times: 2
+    community: 1002
+  - what: 'FFM / DeCIX '
+    times: 1
+    community: 2001
+  - what: 'FFM / DeCIX '
+    times: 2
+    community: 2002
+  - what: 'DUS / ECIX '
+    times: 1
+    community: 3001
+  - what: 'DUS / ECIX '
+    times: 2
+    community: 3002
+  - what: 'BLN / ECIX '
+    times: 1
+    community: 3051
+  - what: 'BLN / ECIX '
+    times: 2
+    community: 3052
+  - what: 'HBG / ECIX '
+    times: 1
+    community: 3101
+  - what: 'HBG / ECIX '
+    times: 2
+    community: 3102
+  - what: 'KLEYREX '
+    times: 1
+    community: 4001
+  - what: 'KLEYREX '
+    times: 2
+    community: 4002
+  - what: 'QSC '
+    times: 1
+    community: 4101
+  - what: 'QSC '
+    times: 2
+    community: 4102
+  - what: 'DECIX '
+    times: 1
+    community: 4201
+  - what: 'DECIX '
+    times: 2
+    community: 4202
+  - what: 'AMSIX '
+    times: 1
+    community: 4301
+  - what: 'AMSIX '
+    times: 2
+    community: 4302
+  - what: 'LINX '
+    times: 1
+    community: 4401
+  - what: 'LINX '
+    times: 2
+    community: 4402
+as: 12732

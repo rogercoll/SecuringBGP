@@ -1,0 +1,22 @@
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: 'GRIX '
+    asn: 0
+    community: 4001
+  - peer: 'GEANT '
+    asn: 0
+    community: 4005
+  - peer: 'GEANT NREN VRF '
+    asn: 0
+    community: 4006
+  - peer: ""
+    asn: 0
+    community: 1
+  prepend:
+  - what: 'AS5408 '
+    times: 5
+    community: 2005
+as: 5408

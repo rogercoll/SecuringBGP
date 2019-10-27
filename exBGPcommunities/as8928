@@ -1,0 +1,124 @@
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: 'UK '
+    asn: 0
+    community: 65201
+  - peer: 'NL '
+    asn: 0
+    community: 65202
+  - peer: 'DE '
+    asn: 0
+    community: 65203
+  - peer: 'FR '
+    asn: 0
+    community: 65204
+  - peer: 'IT '
+    asn: 0
+    community: 65205
+  - peer: 'ES '
+    asn: 0
+    community: 65206
+  - peer: ""
+    asn: 0
+    community: 65207
+  - peer: 'CH '
+    asn: 0
+    community: 65208
+  - peer: 'AT '
+    asn: 0
+    community: 65209
+  - peer: 'US '
+    asn: 0
+    community: 65210
+  - peer: 'SE '
+    asn: 0
+    community: 65211
+  - peer: 'CZ '
+    asn: 0
+    community: 65212
+  - peer: 'HU '
+    asn: 0
+    community: 65213
+  - peer: 'SK '
+    asn: 0
+    community: 65214
+  - peer: 'DK '
+    asn: 0
+    community: 65215
+  - peer: 'BG '
+    asn: 0
+    community: 65216
+  - peer: 'PL '
+    asn: 0
+    community: 65217
+  - peer: 'RO '
+    asn: 0
+    community: 65218
+  - peer: 'AE '
+    asn: 0
+    community: 65219
+  - peer: 'LINX '
+    asn: 0
+    community: 65250
+  - peer: 'AMS - IX '
+    asn: 0
+    community: 65251
+  - peer: 'DE-CIX '
+    asn: 0
+    community: 65252
+  - peer: 'NYIIX '
+    asn: 0
+    community: 65253
+  - peer: 'BNIX '
+    asn: 0
+    community: 65254
+  - peer: 'PARIX '
+    asn: 0
+    community: 65255
+  - peer: 'SFINX '
+    asn: 0
+    community: 65256
+  - peer: 'TIX '
+    asn: 0
+    community: 65257
+  - peer: ""
+    asn: 0
+    community: 65258
+  - peer: 'BIX '
+    asn: 0
+    community: 65260
+  - peer: 'VIX '
+    asn: 0
+    community: 65261
+  - peer: 'NIX '
+    asn: 0
+    community: 65262
+  - peer: 'NETNOD '
+    asn: 0
+    community: 65263
+  - peer: 'ESPANIX '
+    asn: 0
+    community: 65264
+  - peer: 'EQUINIX '
+    asn: 0
+    community: 65265
+  - peer: 'BCIX '
+    asn: 0
+    community: 65266
+  - peer: 'INXS '
+    asn: 0
+    community: 65267
+  - peer: 'NAMEX '
+    asn: 0
+    community: 65268
+  - peer: ""
+    asn: 0
+    community: 65291
+  - peer: 'Peer '
+    asn: 0
+    community: 65292
+  prepend: []
+as: 8928

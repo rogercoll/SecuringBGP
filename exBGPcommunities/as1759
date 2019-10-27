@@ -1,0 +1,14 @@
+localpreference:
+  setcustomerroute:
+  - value: 50
+    community: 1050
+  - value: 110
+    community: 1110
+  - value: 150
+    community: 1150
+other:
+- what: Blackholerouting
+  action: ""
+  from: ""
+  community: 666
+as: 1759

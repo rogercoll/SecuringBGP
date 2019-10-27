@@ -1,0 +1,23 @@
+localpreference:
+  setcustomerroute:
+  - value: 0
+    community: 0
+  - value: 70
+    community: 70
+  - value: 80
+    community: 80
+  - value: 90
+    community: 90
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  prepend:
+  - what: 'all EU peer '
+    times: 3
+    community: 64983
+  - what: 'all EU peer '
+    times: 4
+    community: 64983
+as: 3356

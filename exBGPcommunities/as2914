@@ -1,0 +1,91 @@
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: 'any peer North America '
+    asn: 0
+    community: 4029
+  - peer: 'any peer Europe '
+    asn: 0
+    community: 4229
+  - peer: 'any peer Asia '
+    asn: 0
+    community: 4429
+  - peer: 'any peer South America '
+    asn: 0
+    community: 4629
+  prepend:
+  - what: 'all customer North America '
+    times: 1
+    community: 4011
+  - what: 'all customer North America '
+    times: 2
+    community: 4012
+  - what: 'all customer North America '
+    times: 3
+    community: 4013
+  - what: 'all peer North America '
+    times: 1
+    community: 4021
+  - what: 'all peer North America '
+    times: 2
+    community: 4022
+  - what: 'all peer North America '
+    times: 3
+    community: 4023
+  - what: 'all customer Europe '
+    times: 1
+    community: 4211
+  - what: 'all customer Europe '
+    times: 2
+    community: 4212
+  - what: 'all customer Europe '
+    times: 3
+    community: 4213
+  - what: 'all peer Europe '
+    times: 1
+    community: 4221
+  - what: 'all peer Europe '
+    times: 2
+    community: 4222
+  - what: 'all peer Europe '
+    times: 3
+    community: 4223
+  - what: 'all customer Asia '
+    times: 1
+    community: 4411
+  - what: 'all customer Asia '
+    times: 2
+    community: 4412
+  - what: 'all customer Asia '
+    times: 3
+    community: 4413
+  - what: 'all peer Asia '
+    times: 1
+    community: 4421
+  - what: 'all peer Asia '
+    times: 2
+    community: 4422
+  - what: 'all peer Asia '
+    times: 3
+    community: 4423
+  - what: 'all customer South America '
+    times: 1
+    community: 4611
+  - what: 'all customer South America '
+    times: 2
+    community: 4612
+  - what: 'all customer South America '
+    times: 3
+    community: 4613
+  - what: 'all peer South America '
+    times: 1
+    community: 4621
+  - what: 'all peer South America '
+    times: 2
+    community: 4622
+  - what: 'all peer South America '
+    times: 3
+    community: 4623
+as: 2914

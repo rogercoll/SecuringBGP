@@ -1,0 +1,34 @@
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: 'AS6461 ( AboveNet ) '
+    asn: 0
+    community: 2010
+  - peer: 'transit - '
+    asn: 1
+    community: 2020
+  - peer: 'transit - '
+    asn: 2
+    community: 2030
+  prepend:
+  - what: 'transit - '
+    times: 1
+    community: 2021
+  - what: 'transit - '
+    times: 1
+    community: 2022
+  - what: 'transit - '
+    times: 1
+    community: 2023
+  - what: 'transit - '
+    times: 2
+    community: 2031
+  - what: 'transit - '
+    times: 2
+    community: 2032
+  - what: 'transit - '
+    times: 2
+    community: 2033
+as: 8218

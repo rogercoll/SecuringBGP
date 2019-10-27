@@ -1,0 +1,161 @@
+noexport:
+  donotsend:
+  - what: route
+    peers: ""
+    community: 0
+  - what: route
+    peers: 'NA '
+    community: 970
+  - what: route
+    peers: 'NA '
+    community: 971
+  - what: route
+    peers: 'EU '
+    community: 980
+  - what: route
+    peers: 'EU '
+    community: 981
+  - what: route
+    peers: 'BGP customer '
+    community: 990
+  - what: route
+    peers: 'peer '
+    community: 991
+  setlocpref:
+  - value: 10
+    dest: 'NA '
+    community: 975
+  - value: 10
+    dest: 'EU '
+    community: 985
+localpreference:
+  setcustomerroute:
+  - value: 0
+    community: 0
+  - value: 10
+    community: 10
+  - value: 70
+    community: 70
+  - value: 120
+    community: 120
+  - value: 125
+    community: 125
+  - value: 135
+    community: 135
+  - value: 140
+    community: 140
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: 'all peer '
+    asn: 0
+    community: 0
+  - peer: 'NTT '
+    asn: 2914
+    community: 3010
+  - peer: 'Level3 '
+    asn: 3356
+    community: 3030
+  - peer: 'Tiscali '
+    asn: 3257
+    community: 3120
+  - peer: 'Google '
+    asn: 15169
+    community: 3180
+  - peer: 'UPC '
+    asn: 6830
+    community: 3170
+  - peer: 'France Telecom '
+    asn: 5511
+    community: 3050
+  - peer: 'Zayo '
+    asn: 6461
+    community: 3060
+  - peer: 'Sprint '
+    asn: 1239
+    community: 3070
+  - peer: 'Telia '
+    asn: 1299
+    community: 3080
+  - peer: 'Verizon '
+    asn: 701
+    community: 3090
+  - peer: 'KPN '
+    asn: 286
+    community: 3100
+  - peer: 'UUNet EU '
+    asn: 702
+    community: 3100
+  - peer: 'DTAG '
+    asn: 3320
+    community: 3130
+  - peer: 'Global Crossing '
+    asn: 3549
+    community: 3140
+  - peer: 'Teleglobe '
+    asn: 6453
+    community: 3150
+  - peer: 'ATT '
+    asn: 7018
+    community: 3160
+  - peer: 'CW '
+    asn: 1273
+    community: 3190
+  - peer: 'Cablevision '
+    asn: 6128
+    community: 3200
+  - peer: 'Qwest Centurylink '
+    asn: 209
+    community: 3210
+  - peer: 'TelecomItalia '
+    asn: 6762
+    community: 3220
+  - peer: 'Savvis '
+    asn: 3561
+    community: 3230
+  - peer: 'Bellnexxia '
+    asn: 577
+    community: 3240
+  - peer: 'TDC '
+    asn: 3292
+    community: 3250
+  - peer: 'Tele2 '
+    asn: 1257
+    community: 3260
+  - peer: 'XO '
+    asn: 2828
+    community: 3270
+  - peer: 'Telus '
+    asn: 852
+    community: 3280
+  - peer: 'China Telecom '
+    asn: 4134
+    community: 3290
+  - peer: 'Comcast '
+    asn: 7922
+    community: 3300
+  prepend: []
+other:
+- what: ""
+  action: ""
+  from: ""
+  community: 0
+- what: Route
+  action: islearned
+  from: NA
+  community: 21000
+- what: Routeinternal
+  action: is
+  from: ""
+  community: 21001
+- what: Route
+  action: islearned
+  from: EU
+  community: 21100
+- what: RouteEUinternal
+  action: is
+  from: ""
+  community: 21101
+as: 174

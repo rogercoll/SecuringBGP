@@ -1,0 +1,47 @@
+localpreference:
+  setcustomerroute:
+  - value: 0
+    community: 0
+  - value: 50
+    community: 50
+  - value: 100
+    community: 100
+  - value: 150
+    community: 150
+  - value: 200
+    community: 200
+  - value: 250
+    community: 250
+  - value: 300
+    community: 300
+  - value: 350
+    community: 350
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  prepend:
+  - what: 'globally '
+    times: 1
+    community: 1000
+  - what: 'North America '
+    times: 2
+    community: 2010
+  - what: 'Ashburn '
+    times: 3
+    community: 3111
+other:
+- what: ""
+  action: ""
+  from: ""
+  community: 0
+- what: Nullroutetrafficprefix
+  action: ""
+  from: ""
+  community: 666
+- what: currentregion
+  action: Doexport
+  from: ""
+  community: 999
+as: 4436

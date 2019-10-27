@@ -1,0 +1,45 @@
+localpreference:
+  setcustomerroute:
+  - value: 0
+    community: 0
+  - value: 50
+    community: 50
+  - value: 90
+    community: 90
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: 'DT AS3320 '
+    asn: 0
+    community: 1102
+  - peer: 'TeliaSonera AS1299 '
+    asn: 0
+    community: 1107
+  - peer: 'Supernetwork AS39392 '
+    asn: 0
+    community: 1112
+  prepend: []
+other:
+- what: ""
+  action: ""
+  from: ""
+  community: 0
+- what: Routespeering
+  action: ""
+  from: SIX
+  community: 2401
+- what: Routes
+  action: ""
+  from: DT
+  community: 2402
+- what: Routes
+  action: ""
+  from: TeliaSonera
+  community: 2407
+- what: Routes
+  action: ""
+  from: Supernetwork
+  community: 2412
+as: 6855

@@ -1,0 +1,116 @@
+localpreference:
+  setcustomerroute:
+  - value: 0
+    community: 0
+  - value: 60
+    community: 5060
+  - value: 180
+    community: 5180
+  - value: 220
+    community: 5220
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: 'UUNET ( AS701 ) '
+    asn: 0
+    community: 5500
+  - peer: 'Sprint ( AS1239 ) '
+    asn: 0
+    community: 5510
+  - peer: 'Level3 ( AS3356 ) '
+    asn: 0
+    community: 5550
+  - peer: 'SBC ( AS7132 ) '
+    asn: 0
+    community: 5560
+  - peer: 'AOL ( AS1668 ) '
+    asn: 0
+    community: 5530
+  - peer: 'Cable & Wireless ( AS3561 ) '
+    asn: 0
+    community: 5520
+  prepend:
+  - what: 'all peer '
+    times: 1
+    community: 5001
+  - what: 'all peer '
+    times: 2
+    community: 5002
+  - what: 'all peer '
+    times: 3
+    community: 5003
+  - what: 'all EU peer '
+    times: 1
+    community: 5011
+  - what: 'all EU peer '
+    times: 2
+    community: 5012
+  - what: 'all EU peer '
+    times: 3
+    community: 5013
+  - what: 'UUNET ( AS701 ) '
+    times: 1
+    community: 5501
+  - what: 'UUNET ( AS701 ) '
+    times: 2
+    community: 5502
+  - what: 'UUNET ( AS701 ) '
+    times: 3
+    community: 5503
+  - what: 'Sprint ( AS1239 ) '
+    times: 1
+    community: 5511
+  - what: 'Sprint ( AS1239 ) '
+    times: 2
+    community: 5512
+  - what: 'Sprint ( AS1239 ) '
+    times: 3
+    community: 5513
+  - what: 'Cable & Wireless ( AS3561 ) '
+    times: 1
+    community: 5521
+  - what: 'Cable & Wireless ( AS3561 ) '
+    times: 2
+    community: 5522
+  - what: 'Cable & Wireless ( AS3561 ) '
+    times: 3
+    community: 5523
+  - what: 'AOL ( AS1668 ) '
+    times: 1
+    community: 5531
+  - what: 'AOL ( AS1668 ) '
+    times: 2
+    community: 5532
+  - what: 'AOL ( AS1668 ) '
+    times: 3
+    community: 5533
+  - what: 'AT&T ( AS7018 ) '
+    times: 1
+    community: 5541
+  - what: 'AT&T ( AS7018 ) '
+    times: 2
+    community: 5542
+  - what: 'AT&T ( AS7018 ) '
+    times: 3
+    community: 5543
+  - what: 'Level3 ( AS3356 ) '
+    times: 1
+    community: 5551
+  - what: 'Level3 ( AS3356 ) '
+    times: 2
+    community: 5552
+  - what: 'Level3 ( AS3356 ) '
+    times: 3
+    community: 5553
+  - what: 'SBC ( AS7132 ) '
+    times: 1
+    community: 5561
+  - what: 'SBC ( AS7132 ) '
+    times: 2
+    community: 5562
+  - what: 'SBC ( AS7132 ) '
+    times: 3
+    community: 5563
+as: 6461

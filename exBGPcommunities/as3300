@@ -1,0 +1,164 @@
+localpreference:
+  setcustomerroute:
+  - value: 0
+    community: 0
+  - value: 50
+    community: 901
+  - value: 150
+    community: 902
+  - value: 250
+    community: 903
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: 'all peer '
+    asn: 0
+    community: 2100
+  - peer: 'AS286 , KPN Eurorings '
+    asn: 0
+    community: 2102
+  - peer: 'AS2686 , IBM GN '
+    asn: 0
+    community: 2103
+  - peer: 'AS702 , UUNET '
+    asn: 0
+    community: 2105
+  - peer: 'AS3333 , RIPE NCC '
+    asn: 0
+    community: 2106
+  - peer: 'AS8220 , COLT eu '
+    asn: 0
+    community: 2108
+  - peer: 'AS6830 , UPC ( Formally Chello ) '
+    asn: 0
+    community: 2109
+  - peer: 'AS1239 , Sprint '
+    asn: 0
+    community: 2110
+  - peer: 'AS3549 , Global Crossing '
+    asn: 0
+    community: 2111
+  - peer: 'AS5583 , Equant '
+    asn: 0
+    community: 2113
+  - peer: 'AS5413 , Concentric EU '
+    asn: 0
+    community: 2115
+  - peer: 'AS2914 , Verio '
+    asn: 0
+    community: 2116
+  - peer: 'AS5400 , BT '
+    asn: 0
+    community: 2117
+  - peer: 'AS3291 , PSInet Europe '
+    asn: 0
+    community: 2119
+  - peer: 'AS2874 , Global One '
+    asn: 0
+    community: 2120
+  - peer: 'AS1136 , KPN '
+    asn: 0
+    community: 2121
+  - peer: 'AS2818 , BBC Interney Services , UK '
+    asn: 0
+    community: 2122
+  - peer: 'AS3561 , Cable&Wireless '
+    asn: 0
+    community: 2123
+  - peer: 'AS8560 , Schlund + Partner '
+    asn: 0
+    community: 2125
+  - peer: 'AS3292 , TDC '
+    asn: 0
+    community: 2128
+  - peer: 'AS15412 , FLAG '
+    asn: 0
+    community: 2129
+  - peer: 'AS3303 , Swisscom '
+    asn: 0
+    community: 2130
+  - peer: 'AS1273 , C&W Europe '
+    asn: 0
+    community: 2131
+  - peer: 'AS174 , Cogent Communications '
+    asn: 0
+    community: 2132
+  - peer: 'all peer '
+    asn: 0
+    community: 2300
+  - peer: 'AS6461 , MFN '
+    asn: 0
+    community: 2301
+  - peer: 'AS6079 , RCN '
+    asn: 0
+    community: 2302
+  - peer: 'AS8001 , Net Access Corp '
+    asn: 0
+    community: 2303
+  - peer: 'AS8220 , Colt USA '
+    asn: 0
+    community: 2304
+  - peer: 'AS2497 , IJJ ( Japan ) '
+    asn: 0
+    community: 2305
+  - peer: 'AS2516 , KDDI '
+    asn: 0
+    community: 2306
+  - peer: 'AS4513 , GLOBIX '
+    asn: 0
+    community: 2309
+  - peer: 'AS11867 , PRIMUSTEL '
+    asn: 0
+    community: 2311
+  - peer: 'AS2914 , VERIO '
+    asn: 0
+    community: 2313
+  - peer: 'AS4181 , TDS Telecom '
+    asn: 0
+    community: 2314
+  - peer: 'AS7132 , SBC ( East - coast ) '
+    asn: 0
+    community: 2315
+  - peer: 'AS7132 , SBC ( West - coast ) '
+    asn: 0
+    community: 2316
+  - peer: 'AS8075 , Microsoft USA '
+    asn: 0
+    community: 2317
+  - peer: 'AS7911 , Williams Communications '
+    asn: 0
+    community: 2319
+  - peer: 'AS297 , NASA '
+    asn: 0
+    community: 2320
+  - peer: 'AS10310 , Yahoo '
+    asn: 0
+    community: 2321
+  - peer: 'AS3491 , BT - PCCW '
+    asn: 0
+    community: 2322
+  - peer: 'AS14361 , Hop One '
+    asn: 0
+    community: 2323
+  - peer: 'AS4323 , Time Warner '
+    asn: 0
+    community: 2324
+  - peer: 'AS6830 , UPC - USA '
+    asn: 0
+    community: 2325
+  - peer: 'AS4788 , TMNet '
+    asn: 0
+    community: 2326
+  - peer: 'AS22934 , CET Networks '
+    asn: 0
+    community: 2327
+  - peer: 'AS19029 , New Edge Networks '
+    asn: 0
+    community: 2328
+  - peer: 'AS25973 , Mzima '
+    asn: 0
+    community: 2330
+  prepend: []
+as: 3300

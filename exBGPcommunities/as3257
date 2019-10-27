@@ -1,0 +1,73 @@
+peercontrol:
+  donotannounce:
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: 'upstream '
+    asn: 0
+    community: 1030
+  - peer: 'Europe '
+    asn: 0
+    community: 2490
+  - peer: 'Asia '
+    asn: 0
+    community: 2590
+  - peer: 'the US '
+    asn: 0
+    community: 2990
+  - peer: 'any peer '
+    asn: 0
+    community: 2998
+  - peer: ""
+    asn: 0
+    community: 0
+  - peer: ""
+    asn: 0
+    community: 2666
+  prepend:
+  - what: 'upstream '
+    times: 1
+    community: 1031
+  - what: 'upstream '
+    times: 2
+    community: 1032
+  - what: 'upstream '
+    times: 3
+    community: 1033
+  - what: 'any peering partner '
+    times: 1
+    community: 2291
+  - what: 'any peering partner '
+    times: 2
+    community: 2292
+  - what: 'any peering partner '
+    times: 3
+    community: 2293
+  - what: 'Europe '
+    times: 1
+    community: 2491
+  - what: 'Europe '
+    times: 2
+    community: 2492
+  - what: 'Europe '
+    times: 3
+    community: 2493
+  - what: 'Asia '
+    times: 1
+    community: 2591
+  - what: 'Asia '
+    times: 2
+    community: 2592
+  - what: 'Asia '
+    times: 3
+    community: 2593
+  - what: 'the US '
+    times: 1
+    community: 2991
+  - what: 'the US '
+    times: 2
+    community: 2992
+  - what: 'the US '
+    times: 3
+    community: 2993
+as: 3257

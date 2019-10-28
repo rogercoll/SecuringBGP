@@ -1,0 +1,7 @@
+---
+- name: Set basic configurations for a new BGPcommunities Hyperledger configuration
+  hosts: ASserver
+  remote_user: roger.coll.aumatell
+  become: true
+  roles:
+    - {role: securingbgp.common}

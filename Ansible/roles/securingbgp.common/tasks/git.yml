@@ -1,0 +1,11 @@
+- name: Ensure git is installed (Debian).
+  apt:
+    name: "{{ git_packages }}"
+    state: present
+  when:
+   - ansible_os_family == 'Debian'
+
+- name: Cloning github repository
+  git:
+    repo: https://github.com/rogercoll/myAnsible.git
+    dest: /tmp/testingAnsible

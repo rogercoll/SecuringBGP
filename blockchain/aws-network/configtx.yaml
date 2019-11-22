@@ -1,0 +1,54 @@
+---
+Organizations:
+
+    - &OrdererOrg
+        Name: OrdererOrg
+        ID: OrdererMSP
+        MSPDir: ./crypto-config/ordererOrganizations/example.com/msp
+
+    - &as1
+        Name: as1MSP
+        ID: as1MSP
+        MSPDir: ./crypto-config/peerOrganizations/as1.example.com/msp
+
+    - &as2
+        Name: as2MSP
+        ID: as2MSP
+        MSPDir: ./crypto-config/peerOrganizations/as2.example.com/msp
+
+Orderer: &OrdererDefaults
+
+    OrdererType: solo
+    Addresses:
+        - orderer.example.com:7050
+    BatchTimeout: 2s
+    BatchSize:
+        MaxMessageCount: 10
+        AbsoluteMaxBytes: 99 MB
+        PreferredMaxBytes: 512 KB
+    Kafka:
+        Brokers:
+            - 127.0.0.1:9092
+    Organizations:
+Application: &ApplicationDefaults
+    Organizations:
+
+Profiles:
+
+    BGPGenesis:
+        Orderer:
+            <<: *OrdererDefaults
+            Organizations:
+                - *OrdererOrg
+        Consortiums:
+            SampleConsortium:
+                Organizations:
+                    - *as1
+                    - *as2
+    ChannelAll:
+        Consortium: SampleConsortium
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+                - *as1
+                - *as2

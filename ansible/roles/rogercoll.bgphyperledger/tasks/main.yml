@@ -1,0 +1,5 @@
+---
+# tasks file for bgphyperledger
+- git:
+    repo: 'https://github.com/rogercoll/SecuringBGP.git'
+    dest: /home/ubuntu

@@ -7,4 +7,5 @@
     - {role: geerlingguy.nodejs}
     - {role: geerlingguy.docker}
     - {role: geerlingguy.git}
-    - {role: gantsign.golang,  golang_gopath: '$HOME/go_projects'} 
+    - {role: gantsign.golang,  golang_gopath: '$HOME/go_projects'}
+    - {role: rogercoll.bgphyperledger} 

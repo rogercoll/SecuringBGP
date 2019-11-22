@@ -2,3 +2,6 @@
 63.32.101.90
 54.246.159.118
 34.244.191.208
+
+[ASservers:vars]
+ansible_ssh_private_key_file=/home/rcoll/freeFridays/AWSSecuringBGP/SecuringBGP/ansible/awskey/key.pem

@@ -1,7 +1,10 @@
 ---
 - name: Set basic configurations for a new BGPcommunities Hyperledger configuration
-  hosts: ASserver
-  remote_user: roger.coll.aumatell
+  hosts: ASservers
+  remote_user: ubuntu
   become: true
   roles:
-    - {role: securingbgp.common}
+    - {role: geerlingguy.nodejs}
+    - {role: geerlingguy.docker}
+    - {role: geerlingguy.git}
+    - {role: gantsign.golang,  golang_gopath: '$HOME/go_projects'} 

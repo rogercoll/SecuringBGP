@@ -1,9 +1,0 @@
----
-# tasks file for securingbgp.common
-
-- include_tasks: docker-eng.yml
-
-- include_tasks: docker-compose.yml
-  when: docker_install_compose | bool
-
-- include_tasks: git.yml

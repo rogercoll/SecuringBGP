@@ -1,4 +1,0 @@
----
-# handlers file for securingbgp.common
-- name: restart docker
-  service: "name=docker state={{ docker_restart_handler_state }}"

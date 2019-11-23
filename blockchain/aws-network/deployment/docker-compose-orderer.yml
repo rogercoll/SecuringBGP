@@ -13,12 +13,13 @@ services:
         environment:
             - ORDERER_HOST=orderer.example.com
         extra_hosts:
-            - "peer0.as1.example.com:34.253.211.210"
-            - "peer0.as2.example.com:54.194.22.75"
+            - "peer0.as1.example.com:${AS1_IP}"
+            - "peer0.as2.example.com:${AS2_IP}"
         volumes:
             - ../crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp:/var/hyperledger/msp
             - ../crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls:/var/hyperledger/tls
             - ../channel-artifacts/:/var/hyperledger/configs
+            - ../persistence/orderer/:/var/hyperledger/production
         networks:
           fabric:
              aliases:

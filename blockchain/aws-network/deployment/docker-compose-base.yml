@@ -32,6 +32,7 @@ services:
         volumes:
             - ../channel-artifacts/:/var/hyperledger/configs
             - ../crypto-config/ordererOrganizations/example.com/users:/var/hyperledger/users
+            - ../persistence/orderer/:/var/hyperledger/production
         working_dir: /opt/gopath/src/github.com/hyperledger/fabric/orderer
         command: orderer
         ports:
@@ -63,6 +64,7 @@ services:
             - $GOPATH/src/github.com/hyperledger/fabric/:/opt/gopath/src/github.com/hyperledger/fabric/
             - ../crypto-config/:/var/hyperledger/configs
             - ../channel-artifacts/:/var/hyperledger/configs
+            - ../persistence/peer/:/var/hyperledger/production
         command: peer node start
         ports:
             - '7051'

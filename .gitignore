@@ -1,3 +1,4 @@
 node_modules/
 ansible/awskey/*
 ansible/roles/*
+ansible/awsKeys/*

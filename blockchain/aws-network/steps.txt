@@ -1,0 +1,45 @@
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+
+cd ~/SecuringBGP
+sudo git pull
+
+cd ~/SecuringBGP/aws-network/deployment/
+
+
+#ORDERER
+docker-compose -f docker-compose-orderer.yml up -d
+docker logs --follow orderer.example.com
+
+#AS1
+docker-compose -f docker-compose-node1.yml up -d
+
+#NOMES EL PRIMER COP PER CREAR EL BLOC DEL CANAL!
+docker exec -e "CORE_PEER_MSPCONFIGPATH=/var/hyperledger/users/Admin@as1.example.com/msp" peer0.as1.example.com peer channel create -o orderer.example.com:7050 -c channelall -f /var/hyperledger/configs/channelall.tx
+
+sudo docker cp peer0.as1.example.com:channelall.block .
+# AQUEST BLOC QUE ES COPIA S'HA DENVIAR A CADA PEER
+
+docker exec -e "CORE_PEER_MSPCONFIGPATH=/var/hyperledger/users/Admin@as1.example.com/msp" peer0.as1.example.com peer channel join -b channelall.block
+
+#INSTALEM I INSTANCIEM LA CHAIN
+docker exec cli peer chaincode install -n communitycontract -v 0 -p /opt/gopath/src/github.com/chaincode -l node
+docker exec cli peer chaincode instantiate -o orderer.example.com:7050 -C channelall -n communitycontract -v 0 -l node -c '{"Args":["securingBGP.community:instantiate"]}' -P "OR ('as1MSP.member', 'as2MSP.member')"
+
+#PROVES AMB QUERY
+docker exec cli peer chaincode invoke -o orderer.example.com:7050 -C channelall -n communitycontract -c '{"Args":["newCommunity","123", "NO_EXPORT","USA"]}'
+docker exec cli peer chaincode invoke -o orderer.example.com:7050 -C channelall -n communitycontract -c '{"Args":["getCommunity","123", "NO_EXPORT","USA"]}'
+
+#AS2
+docker-compose -f docker-compose-node2.yml up -d
+docker cp channelall.block peer0.as2.example.com:/channelall.block
+
+#USANT EL BLOC QUE S'HA CREAT AMB L'AS1
+docker exec -e "CORE_PEER_MSPCONFIGPATH=/var/hyperledger/users/Admin@as2.example.com/msp" peer0.as2.example.com peer channel join -b channelall.block
+
+#INSTANCIEM LA CHAIN
+docker exec cli peer chaincode install -n communitycontract -v 0 -p /opt/gopath/src/github.com/chaincode -l node
+
+#PROVES AMB QUERY
+docker exec cli peer chaincode invoke -o orderer.example.com:7050 -C channelall -n communitycontract -c '{"Args":["newCommunity","123", "NO_EXPORT","USA"]}'
+docker exec cli peer chaincode invoke -o orderer.example.com:7050 -C channelall -n communitycontract -c '{"Args":["getCommunity","123", "NO_EXPORT","USA"]}'
